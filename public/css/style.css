@@ -1,4 +1,144 @@
-h1{
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-size: 62.5%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header h1 {
+    font-size: 10em;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+header {
+    border-top: 1px #000 solid;
+    padding-bottom: 12rem;
+}
+
+nav, footer {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: flex-end;
+    padding: 0 1em;
+    background-color: #fff;
+}
+
+nav a, footer a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+    border: 1px #000 solid;
+    font-size: 0.7rem;
+    margin: 0 -1.1em;
+}
+
+nav {
+    border-bottom: 1px #000 solid;
+    padding: 2em;
+}
+
+#signin-buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#signin-buttons button {
+    background-color: #fff;
+    border: 0;
+    padding: 1em 2em;
+    font-size: 2em;
+    border: 1px #000 solid;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+}
+
+#about {
+    /* background-color: rgb(179, 192, 211); */
+    border-top: 1px #000 solid;
+    padding: 15em;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+#about p {
+    font-size: 1.5em;
+    padding: 0.5em 2em;
+    line-height: 150%;
+}
+
+#about img {
+    width: 100%;
+    max-width: 500px;
+    /* border: 1px #000 solid; */
+}
+
+#about section {
+    padding: 4em 1em;
+    /* border: 1px #000 solid; */
+    height: 500px;
+    width: 500px;
+    /* border-left: none; */
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+footer {
+    justify-content: center;
+    padding: 2rem;
+    border-top: 1px #000 solid;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+/* h1{
     color: red;
 }
 .completed{
@@ -7,4 +147,4 @@ h1{
 }
 .not{
     text-decoration: underline;
-}
+} */
