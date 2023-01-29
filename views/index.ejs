@@ -1,50 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%- include('partials/header') -%>
+      
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div
+              class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+            >
+              <img
+                alt="Lab"
+                src="/img/Science-cuate.png"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+      
+            <div class="lg:py-24">
+              <h2 class="text-3xl font-bold sm:text-4xl">Manage your lab on time</h2>
+      
+              <p class="mt-4 text-gray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
+                atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
+                veniam tempora deserunt? Molestiae eius quidem quam repellat.
+              </p>
+      
+              <!-- Base - Left -->
 
-    <title>LumiLab</title>
-    
-</head>
-<body>
-    <header>
-    <nav>
-        <ul><a href="">Home</a></ul>
-        <ul><a href="">Inventory</a></ul>
-        <ul><a href="">Restock</a></ul>
-    </nav>
-        <h1>LumiLab</h1>
-        <section id="signin-buttons">
-            <a href="/todos"><button>Log In</button></a>
-            <a href="/todos"><button>Sign Up</button></a>
-        </section>
-    </header>
+              <a
+              class="mt-8 group relative inline-flex items-center overflow-hidden rounded bg-teal-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-teal-600"
+              href="/signup"
+              >
+              <span
+                class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4"
+              >
+                <svg
+                  class="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </span>
 
-    <main>
-        <section id="about">
-            <img src="https://placehold.co/500" alt="Lab inventory">
-            <section>
-                <h2>Brighter Than Your Average <br>Lab Management System</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, fuga dolores, quia reprehenderit rem assumenda repudiandae nisi vel ratione voluptas atque dolorum ipsa dolor. In porro asperiores veritatis dolore eveniet.</p>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate pariatur quisquam fuga error incidunt ipsum dolorum, impedit repellat laudantium officia delectus veniam eum! Aut quis fugiat expedita laboriosam tempore magni!.</p>
-            </section>
-        </section>
-    </main>
+              <span class="text-sm font-medium transition-all group-hover:mr-4">
+                Sign Up
+              </span>
+              </a>
 
-    <footer>
-        <ul><a href="">Github</a></ul>
-        <ul><a href="">Portfolio</a></ul>
-        <ul><a href="">LinkedIn</a></ul>
-    </footer>
-    
-</body>
-</html>
+              <!-- <a
+                href="/login"
+                class="mt-8 inline-flex items-center rounded border border-teal-600 bg-teal-600 px-8 py-3 text-white hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-600"
+              >
+                <span class="text-sm font-medium"> Log In </span>
+      
+                <svg
+                  class="ml-3 h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a> -->
+
+            <a
+                class="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-teal-600 focus:outline-none focus:ring active:text-teal-600"
+                href="/login"
+                >
+                <span
+                    class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4"
+                >
+                    <svg
+                    class="h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                    </svg>
+                </span>
+
+                <span class="text-sm font-medium transition-all group-hover:mr-4">
+                    Log In
+                </span>
+            </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+
+
+<%- include('partials/footer') -%>
