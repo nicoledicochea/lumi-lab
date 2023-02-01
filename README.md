@@ -16,4 +16,12 @@ With LumiLab, staff can log in to view their Laboratory Inventory, add new stock
 
 ## How It's Made:
 
-**Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript
+**Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript, Tailwind
+
+### Open Source Tailwind Components:
+- [Hyper UI](https://www.hyperui.dev/)
+- [Flowrift](https://flowrift.com/c/cta)
+- [Tailwind Awesome](https://www.tailwindawesome.com/?price=free&type=kit) - Multiple free kits
+
+### Illustrations:
+- [Work illustrations by Storyset](https://storyset.com/work)
