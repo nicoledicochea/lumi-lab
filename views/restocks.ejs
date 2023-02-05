@@ -31,7 +31,7 @@
 <div class="overflow-hidden overflow-x-auto rounded-lg border border-gray-200 text-center max-w-2xl mx-auto">
     <table class="min-w-full divide-y-2 divide-gray-200 text-sm">
       <thead>
-        <tr class="bg-gray-100">
+        <tr class="bg-gray-100 h-16">
           <th
             class="whitespace-nowrap px-4 py-2 text-center font-medium text-gray-900"
           >
@@ -53,11 +53,14 @@
       <tbody class="divide-y divide-gray-200">
 
         <% for(var i=0; i<items.length; i++) {%>
-        <tr>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+        <tr class="h-16">
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700 hover:underline">
             <a href="/item/<%= items[i]._id%>"><%= items[i].itemName%></a>
           </td>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= items[i].amountInStock%>
+
+            <span class="text-xs font-medium uppercase ml-1"> <%= items[i].units%> </span>
+
           <td class="whitespace-nowrap px-4 py-2">
             <strong
               class="rounded px-3 py-1.5 text-xs font-medium uppercase <%= items[i].status === 'Restock' ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'%>"

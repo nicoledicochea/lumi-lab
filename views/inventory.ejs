@@ -410,13 +410,13 @@
                 <%= items[i].itemName%>
                 </h3>
 
-                <p class="mt-2">
+                <button class="mt-2 rounded px-3 py-1.5 text-xs font-medium uppercase <%= items[i].status === 'Restock' ? 'bg-red-100 text-red-700' : items[i].status === 'Upcoming' ? 'bg-amber-100 text-amber-700' : 'bg-green-100 text-green-700' %> ">
                   <span class="sr-only"> 
                     Status
                   </span>
 
                   <span class="tracking-wider text-gray-900"> <%= items[i].status%> </span>
-                </p>
+                </button>
               </div>
             </a>
           </li>
