@@ -1,0 +1,92 @@
+<%- include('partials/header') -%>
+
+
+<div class="bg-white py-6 sm:py-8 lg:py-12 mb-20 mt-5">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-8">Add Inventory Item</h2>
+  
+      
+      <form class="max-w-lg border rounded-lg mx-auto" action="/item/createItem" enctype="multipart/form-data" method="POST">
+        <div class="flex flex-col gap-4 p-4 md:p-8">
+          <div>
+            <label for="itemName" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Item Name</label>
+            <input name="itemName" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+          </div>
+  
+          <div>
+            <label for="SKU" class="inline-block text-gray-800 text-sm sm:text-base mb-2">SKU (optional)</label>
+            <input name="SKU" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+          </div>
+
+          <div>
+            <label for="status" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Status</label>
+            <select id="status" name="status" class="mt-1 text-sm border-gray-300 rounded w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2">
+              <option value="In Stock">In Stock</option>
+              <option value="Upcoming">Upcoming Restock</option>
+              <option value="Restock">Restock Now</option>
+            </select>
+          </div>
+
+          <!-- <div>
+            <label for="inStock" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Amount in Stock</label>
+            <input name="inStock" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+          </div> -->
+
+          <table class="table-fixed">
+            <tbody>
+              <tr>
+                <td><label for="inStock" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Amount in Stock</label></td>
+                <td><label for="units" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Units</label></td>
+              </tr>
+              <tr>
+                <td><input name="inStock" type="text" class="w-half bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" /></td>
+                <td><input name="units" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" /></td>
+              </tr>
+            </tbody>
+            </table>
+
+          <div>
+            <label for="reorderAt" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Reorder At</label>
+            <input name="reorderAt" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+          </div>
+
+          <div>
+            <label for="itemImage" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Upload Photo</label>
+            <input name="itemImage" type="file" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+          </div>
+
+
+          <!-- <% if (locals.messages.errors) { %>
+            <% messages.errors.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+            <% }) %>    
+        <% } %>
+        <% if (locals.messages.info) { %>
+            <% messages.info.forEach( el => { %>
+                <div class="alert alert-info"><%= el.msg %></div>
+            <% }) %>    
+        <% } %> -->
+  
+          <button class="block bg-teal-600 hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 rounded border border-teal-600 mt-3" type="submit">Submit</button>
+  
+          <!-- <div class="flex justify-center items-center relative">
+            <span class="h-px bg-gray-300 absolute inset-x-0"></span>
+            <span class="bg-white text-gray-400 text-sm relative px-4">Sign up with social</span>
+          </div> -->
+  
+          
+        </div>
+  
+        <div class="flex justify-center items-center bg-gray-100 p-4">
+          <p class="text-gray-500 text-sm text-center">Item already exist? <a href="/inventory" class="text-teal-600 hover:text-teal-600 active:text-teal-700 transition duration-100">Check Inventory</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+<%- include('partials/footer') -%>

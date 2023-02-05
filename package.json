@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "TAILWIND_MODE=watch craco start node server.js",
     "dev": "nodemon server.js"
   },
   "repository": {
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/nicoledicochea/lumi-lab#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "cloudinary": "^1.25.1",
+    "cloudinary": "^1.33.0",
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
@@ -38,6 +38,8 @@
     "validator": "^13.6.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   }
 }

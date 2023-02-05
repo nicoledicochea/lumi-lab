@@ -7,22 +7,26 @@ const ItemSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    require: true,
+    require: false,
   },
   SKU: {
     type: String,
-    require: true,
+    require: false,
   },
   notes: {
     type: String,
-    require: true,
+    require: false,
   },
   amountInStock: {
+    type: Number,
+    required: true,
+  },
+  units: {
     type: String,
     required: true,
   },
   status: {
-    type: Number,
+    type: String,
     required: true,
   },
   reorderAt: {

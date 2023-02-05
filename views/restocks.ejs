@@ -1,123 +1,49 @@
 <%- include('partials/header') -%>
 
-<!--
-  This component uses @tailwindcss/forms
 
-  yarn add @tailwindcss/forms
-  npm install @tailwindcss/forms
+<!-- image -->
 
-  plugins: [require('@tailwindcss/forms')]
--->
+<!-- <section
+  class="overflow-hidden bg-[url(/img/Science-rafiki.svg)] bg-cover bg-center bg-no-repeat"
+> -->
+
+  <!-- adds slight gradient over image -->
+  <!-- <div class="bg-black/25 p-20 md:p-20 lg:px-20 lg:py-20">
+  </div> -->
+
+  <!-- <div class="p-20 md:p-20 lg:px-20 lg:py-20">
+  </div>
+</section> -->
 
 
+<!-- title -->
 
+<h1 class="text-black-800 text-3xl sm:text-4xl md:text-5xl font-bold mt-8 mb-8 md:mb-12 text-center">Restocks</h1>
+
+<p class="text-gray-500 xl:text-lg leading-relaxed mb-8 md:mb-12 text-center px-10">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
+
+<!-- <h1 class="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mt-8 mb-8 md:mb-12 text-center">Restocks</h1> -->
 
 <!-- table -->
 
-<!--
-  This component uses @tailwindcss/forms
 
-  yarn add @tailwindcss/forms
-  npm install @tailwindcss/forms
 
-  plugins: [require('@tailwindcss/forms')]
--->
-
-<div class="overflow-hidden overflow-x-auto rounded-lg border border-gray-200">
-    <table class="min-w-full divide-y divide-gray-200 text-sm">
-      <thead class="bg-gray-100">
+<div class="overflow-hidden overflow-x-auto rounded-lg border border-gray-200 text-center max-w-2xl mx-auto">
+    <table class="min-w-full divide-y-2 divide-gray-200 text-sm">
+      <thead>
         <tr>
-          <th class="sticky inset-y-0 left-0 bg-gray-100 px-4 py-2 text-left">
-            <label class="sr-only" for="SelectAll">Select All</label>
-  
-            <input
-              class="h-5 w-5 rounded border-gray-200"
-              type="checkbox"
-              id="SelectAll"
-            />
-          </th>
           <th
-            class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+            class="whitespace-nowrap px-4 py-2 text-center font-medium text-gray-900"
           >
-            <div class="flex items-center gap-2">
-              ID
-  
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 text-gray-700"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
+            Item Name
           </th>
           <th
-            class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+            class="whitespace-nowrap px-4 py-2 text-center font-medium text-gray-900"
           >
-            <div class="flex items-center gap-2">
-              Name
-  
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 text-gray-700"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
+          Amount Left
           </th>
           <th
-            class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
-          >
-            <div class="flex items-center gap-2">
-              Email
-  
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 text-gray-700"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-          </th>
-          <th
-            class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
-          >
-            <div class="flex items-center gap-2">
-              Amount
-  
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 text-gray-700"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-          </th>
-          <th
-            class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+            class="whitespace-nowrap px-4 py-2 text-center font-medium text-gray-900"
           >
             Status
           </th>
@@ -125,85 +51,44 @@
       </thead>
   
       <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="sticky inset-y-0 left-0 bg-white px-4 py-2">
-            <label class="sr-only" for="Row1">Row 1</label>
-  
-            <input
-              class="h-5 w-5 rounded border-gray-200"
-              type="checkbox"
-              id="Row1"
-            />
-          </td>
-          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-            #00001
-          </td>
+
+        
+        <tr class="bg-gray-100">
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">
             John Frusciante
           </td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700">john@rhcp.com</td>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">$783.23</td>
           <td class="whitespace-nowrap px-4 py-2">
             <strong
               class="rounded bg-red-100 px-3 py-1.5 text-xs font-medium text-red-700"
             >
-              Cancelled
+              Restock
             </strong>
           </td>
         </tr>
   
         <tr>
-          <td class="sticky inset-y-0 left-0 bg-white px-4 py-2">
-            <label class="sr-only" for="Row2">Row 2</label>
-  
-            <input
-              class="h-5 w-5 rounded border-gray-200"
-              type="checkbox"
-              id="Row2"
-            />
-          </td>
-          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-            #00002
-          </td>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">
             George Harrison
-          </td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700">
-            george@beatles.com
           </td>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">$128.99</td>
           <td class="whitespace-nowrap px-4 py-2">
             <strong
               class="rounded bg-green-100 px-3 py-1.5 text-xs font-medium text-green-700"
             >
-              Paid
+              In Stock
             </strong>
           </td>
         </tr>
   
-        <tr>
-          <td class="sticky inset-y-0 left-0 bg-white px-4 py-2">
-            <label class="sr-only" for="Row3">Row 3</label>
-  
-            <input
-              class="h-5 w-5 rounded border-gray-200"
-              type="checkbox"
-              id="Row3"
-            />
-          </td>
-          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-            #00003
-          </td>
+        <tr class="bg-gray-100">
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">Dave Gilmour</td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700">
-            dave@pinkfloyd.com
-          </td>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">$459.43</td>
           <td class="whitespace-nowrap px-4 py-2">
             <strong
               class="rounded bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-700"
             >
-              Partially Refunded
+              Upcoming
             </strong>
           </td>
         </tr>
@@ -217,7 +102,7 @@
 
   
   <div class="bg-white py-6 sm:py-8 lg:py-12">
-    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+    <div class="max-w-2xl mx-auto">
       <div class="flex flex-col sm:flex-row justify-center items-center bg-gray-100 rounded-lg gap-4 p-4 md:p-8">
   
         <a href="/inventory" class="inline-block bg-teal-600 hover:bg-teal-600 active:bg-teal-600 focus-visible:ring ring-teal-600 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Check All Inventory</a>
