@@ -394,11 +394,11 @@
 
           <!-- first item -->
           
-
+          <% for(var i=0; i<items.length; i++) {%>
           <li>
-            <a href="#" class="block overflow-hidden group">
+            <a href="/item/<%= items[i]._id%>" class="block overflow-hidden group">
               <img
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="<%= items[i].image%>"
                 alt=""
                 class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
               />
@@ -407,17 +407,20 @@
                 <h3
                   class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
                 >
-                  Item Name
+                <%= items[i].itemName%>
                 </h3>
 
                 <p class="mt-2">
-                  <span class="sr-only"> Status </span>
+                  <span class="sr-only"> 
+                    Status
+                  </span>
 
-                  <span class="tracking-wider text-gray-900"> Restock, Upcoming, or In Stock </span>
+                  <span class="tracking-wider text-gray-900"> <%= items[i].status%> </span>
                 </p>
               </div>
             </a>
           </li>
+          <% } %>
 
 
 

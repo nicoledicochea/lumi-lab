@@ -1,7 +1,10 @@
+const Item = require("../models/Item");
+
 module.exports = {
     getInventory: async (req, res) => {
       try {
-        res.render("inventory.ejs");
+        const items = await Item.find({ user: req.user.id });
+        res.render("inventory.ejs", { items: items, user: req.user });
       } catch (err) {
         console.log(err);
       }

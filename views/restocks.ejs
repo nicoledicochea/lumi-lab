@@ -31,7 +31,7 @@
 <div class="overflow-hidden overflow-x-auto rounded-lg border border-gray-200 text-center max-w-2xl mx-auto">
     <table class="min-w-full divide-y-2 divide-gray-200 text-sm">
       <thead>
-        <tr>
+        <tr class="bg-gray-100">
           <th
             class="whitespace-nowrap px-4 py-2 text-center font-medium text-gray-900"
           >
@@ -52,22 +52,23 @@
   
       <tbody class="divide-y divide-gray-200">
 
-        
-        <tr class="bg-gray-100">
+        <% for(var i=0; i<items.length; i++) {%>
+        <tr>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">
-            John Frusciante
+            <a href="/item/<%= items[i]._id%>"><%= items[i].itemName%></a>
           </td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700">$783.23</td>
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= items[i].amountInStock%>
           <td class="whitespace-nowrap px-4 py-2">
             <strong
-              class="rounded bg-red-100 px-3 py-1.5 text-xs font-medium text-red-700"
+              class="rounded px-3 py-1.5 text-xs font-medium uppercase <%= items[i].status === 'Restock' ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'%>"
             >
-              Restock
+            <%= items[i].status%>
             </strong>
           </td>
         </tr>
+        <% } %>
   
-        <tr>
+        <!-- <tr>
           <td class="whitespace-nowrap px-4 py-2 text-gray-700">
             George Harrison
           </td>
@@ -91,7 +92,7 @@
               Upcoming
             </strong>
           </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
   </div>
