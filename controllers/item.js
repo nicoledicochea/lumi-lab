@@ -33,7 +33,7 @@ module.exports = {
           // user: req.user.id,
         });
         console.log("Item has been added!");
-        res.redirect("/dashboard");
+        res.redirect("/inventory");
       } catch (err) {
         console.log(err);
       }
@@ -86,6 +86,20 @@ module.exports = {
         res.redirect(`/item/${req.params.id}`);
       } catch (err) {
         console.log(err);
+      }
+    },
+    deleteItem: async (req, res) => {
+      try {
+        // Find item by id
+        let item = await Item.findById({ _id: req.params.id });
+        // Delete image from cloudinary
+        await cloudinary.uploader.destroy(item.cloudinaryId);
+        // Delete item from db
+        await Item.deleteOne({ _id: req.params.id });
+        console.log("Deleted Item");
+        res.redirect("/dashboard");
+      } catch (err) {
+        res.redirect("/dashboard");
       }
     },
 };

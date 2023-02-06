@@ -41,6 +41,10 @@ const ItemSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  cloudinaryId: {
+    type: String,
+    require: true,
+  },
 });
 
 module.exports = mongoose.model("Item", ItemSchema);

@@ -99,6 +99,21 @@
 
 
           <!-- <p class="p-5 leading-relaxed text-justify mb-4">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p> -->
+
+          <!-- delete item -->
+          <form action="/item/deleteItem/<%= item.id %>?_method=DELETE"
+            method="POST">
+            <div class="mt-28 mx-auto flex justify-center items-center">
+              
+              <button class="max-w-full w-2/4 block bg-teal-600 hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 rounded border border-teal-600 block" type="submit">Delete</button>
+
+            </div >
+
+            <div class="flex justify-center items-center p-4">
+              <p class="text-gray-500 text-sm text-center"><span class="text-teal-600 hover:text-teal-600 active:text-teal-700 transition duration-100">Warning:</span> This action cannot be undone</p>
+            </div>
+          </form >
+
         </div>
       </div>
     </div>

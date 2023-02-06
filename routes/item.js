@@ -17,4 +17,6 @@ router.put("/changeReorderAt/:id", itemController.changeReorderAt);
 
 router.put("/changeUnits/:id", itemController.changeUnits);
 
+router.delete("/deleteItem/:id", itemController.deleteItem);
+
 module.exports = router;
