@@ -1,8 +1,48 @@
 <%- include('partials/header') -%>
 
 <section class="text-gray-600 body-font overflow-hidden">
-    <div class="container px-5 py-24 mx-auto">
+
+
+    <div class="container px-5 pt-12 pb-24 mx-auto">
+
+      
+      <!-- button start -->
+
+      <!-- Base - Left -->
+
+      <di class="container lg:w-4/5 flex items-center justify-left mb-16 mx-auto">
+        <a
+          class="group relative inline-flex items-center overflow-hidden rounded bg-teal-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-teal-600"
+          href="/inventory"
+        >
+          <span
+            class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4"
+          >
+            <svg
+              class="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+              />
+            </svg>
+          </span>
+  
+          <span class="text-sm font-medium transition-all group-hover:mr-4">
+            Back to Inventory
+          </span>
+        </a>
+      </di >
+      <!-- button end -->
+
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
+
         <img alt="<%= item.itemName%>" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="<%= item.image%>">
 
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mb-6 lg:mb-0">
