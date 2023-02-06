@@ -54,12 +54,12 @@
 
         <% for(var i=0; i<items.length; i++) {%>
         <tr class="h-16">
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700 hover:underline">
+          <td class="whitespace-wrap px-10 py-2 text-gray-700 hover:underline hover:underline-offset-4">
             <a href="/item/<%= items[i]._id%>"><%= items[i].itemName%></a>
           </td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= items[i].amountInStock%>
+          <td class="whitespace-wrap px-4 py-2 text-gray-700"><%= items[i].amountInStock%>
 
-            <span class="text-xs font-medium uppercase ml-1"> <%= items[i].units%> </span>
+            <span class="text-xs uppercase ml-1"> <%= items[i].units%> </span>
 
           <td class="whitespace-nowrap px-4 py-2">
             <strong

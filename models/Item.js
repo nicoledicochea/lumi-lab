@@ -7,7 +7,7 @@ const ItemSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    require: false,
+    require: true,
   },
   SKU: {
     type: String,
@@ -18,7 +18,7 @@ const ItemSchema = new mongoose.Schema({
     require: false,
   },
   amountInStock: {
-    type: Number,
+    type: String,
     required: true,
   },
   units: {
@@ -30,7 +30,7 @@ const ItemSchema = new mongoose.Schema({
     required: true,
   },
   reorderAt: {
-    type: Number,
+    type: String,
     required: true,
   },
   user: {

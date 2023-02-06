@@ -38,4 +38,54 @@ module.exports = {
         console.log(err);
       }
     },
+    getItem: async (req, res) => {
+      try {
+        const item = await Item.findById(req.params.id);
+        res.render("item.ejs", { item: item, user: req.user });
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    changeQuantity: async (req, res) => {
+      try {
+        await Item.findOneAndUpdate(
+          { _id: req.params.id },
+          {
+            amountInStock: parseInt(req.body.inStock),
+          }
+        );
+        console.log("Quantity Updated");
+        res.redirect(`/item/${req.params.id}`);
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    changeReorderAt: async (req, res) => {
+      try {
+        await Item.findOneAndUpdate(
+          { _id: req.params.id },
+          {
+            reorderAt: parseInt(req.body.reorderAt),
+          }
+        );
+        console.log("Reorder At Updated");
+        res.redirect(`/item/${req.params.id}`);
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    changeUnits: async (req, res) => {
+      try {
+        await Item.findOneAndUpdate(
+          { _id: req.params.id },
+          {
+            units: req.body.units,
+          }
+        );
+        console.log("Quantity Updated");
+        res.redirect(`/item/${req.params.id}`);
+      } catch (err) {
+        console.log(err);
+      }
+    },
 };
