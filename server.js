@@ -1,7 +1,5 @@
 const express = require("express");
 const app = express();
-//Use .env file in config folder
-require("dotenv").config();
 const mongoose = require("mongoose");
 const passport = require("passport");
 const session = require("express-session");
@@ -14,7 +12,8 @@ const mainRoutes = require("./routes/main");
 const itemRoutes = require("./routes/item");
 // const authRoutes = require('./routes/auth');
 
-
+//Use .env file in config folder
+require("dotenv").config({ path: "./config/.env" });
 
 // Passport config
 require("./config/passport")(passport);
@@ -61,6 +60,7 @@ app.use("/item", itemRoutes);
 // app.use("/auth", authRoutes);
 
 //Server Running
+const PORT = 3012
 app.listen(process.env.PORT || PORT, () => {
   console.log("Server is running, you better catch it!");
 });
