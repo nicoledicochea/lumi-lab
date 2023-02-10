@@ -11,6 +11,13 @@ For a quick demo, use the following login information:
 - Email: guest@guest.com
 - Password: guest123
 
+<p align="center">
+<h2>Low Quality Preview</h2>
+
+
+<img alt="Screenshot of LumiLab Homepage" width="650" src="https://user-images.githubusercontent.com/111663583/218010069-7eb61449-b943-4c96-a258-589ba5f93c21.gif"></img>
+
+
 ## An In-Progress FullStack Web App
 What's a laboratory without inventory? A useless room full of expensive equipment.
 
