@@ -14,7 +14,7 @@ For a quick demo with lab items already uploaded, use the following login inform
 ## Preview
 I'm working on making a video for better demo quality!
 
-<img alt="Screenshot of LumiLab Homepage" width="650" src="https://user-images.githubusercontent.com/111663583/218010069-7eb61449-b943-4c96-a258-589ba5f93c21.gif"></img>
+<p align="center"><img alt="Screenshot of LumiLab Homepage" width="550" src="https://user-images.githubusercontent.com/111663583/218010069-7eb61449-b943-4c96-a258-589ba5f93c21.gif"></img></p>
 
 
 ## An In-Progress FullStack Web App
