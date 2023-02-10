@@ -7,13 +7,12 @@
 
 **Link to project:** [LumiLab](https://lumilab.onrender.com/)
 
-For a quick demo, use the following login information:
+For a quick demo with lab items already uploaded, use the following login information:
 - Email: guest@guest.com
 - Password: guest123
 
-<p align="center">
-<h2>Low Quality Preview</h2>
-
+## Preview
+I'm working on making a video for better demo quality!
 
 <img alt="Screenshot of LumiLab Homepage" width="650" src="https://user-images.githubusercontent.com/111663583/218010069-7eb61449-b943-4c96-a258-589ba5f93c21.gif"></img>
 
