@@ -26,7 +26,7 @@ With LumiLab, staff can log in to view their Laboratory Inventory, add new stock
 
 ## How It's Made:
 
-**Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript, Tailwind
+**Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript, EJS Tailwind
 
 ### Open Source Tailwind Components:
 - [Hyper UI](https://www.hyperui.dev/)
@@ -35,6 +35,18 @@ With LumiLab, staff can log in to view their Laboratory Inventory, add new stock
 
 ### Illustrations:
 - [Work illustrations by Storyset](https://storyset.com/work)
+
+I organized my code according to the Model View Controller software architecture. Be sure to check out my presentation on MVC [here](https://github.com/nicoledicochea/mvc-presentation)! This helped to maintain distinction between the functionality of each added feature. 
+
+I also added on a Routes folder. The routes takes requests from the User and send it to the correct Controller. This helped to declutter the Controller files.
+
+I created two schemas using mongoose: User and Item. The User model allows for user data to be saved to the database and contained the code for hashing the user's password. Don't worry, no risk of your password being released here with LumiLab! The hashing prevents your password from being saved in the database as plain text. 
+
+The Item model contains all the info necessary for an inventory item to be added into the database.
+
+I used EJS templating to serve up HTML to the end user. EJS is great for embedding Javascript on the client side and allows for the use of variables and conditionals.
+
+As for the design: Green reminds me of science, the study of the natural world surrounding us. But, blue is cold and clinical, like a sterile lab set up. So, I went for a happy medium. A nice teal-600 for the color pallette. I kept it simple to maintain a professional interface.
 
 ## Optimizations
 
@@ -45,6 +57,10 @@ Right now the Status for each inventory item is selected by the user and hard-co
 - **In Stock** - occurs when Quantity in Stock is greater than 5% of Reorder At Quantity 
 
 Validation to the Add Item form. Currently, if fields aren't filled in, the error only displays on the console and will not show for the end user. I need to implement mongoose Validation so I can populate the front-end with a conditional for errors to pop up.
+
+I want to add in filtering for the inventory page. This will require adding on to the Item schema with categories that are user-inputted. These categories can then be selected from a list to quickly find matching items.
+
+Add in other methods for logging in, such as google oauth.
 
 ## Lessons Learned:
 
