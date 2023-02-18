@@ -5,7 +5,7 @@
 <img alt="Screenshot of LumiLab Homepage" width="650" src="https://user-images.githubusercontent.com/111663583/218003521-2df26205-f0c2-4a76-9a25-a3423bf1a5f1.png"></img>
 </p>
 
-**Link to project:** [LumiLab](https://lumilab.onrender.com/)
+**Link to project:** [LumiLab](https://lumilab.app/)
 
 For a quick demo with lab items already uploaded, use the following login information:
 - Email: guest@guest.com
