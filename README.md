@@ -44,7 +44,7 @@ With LumiLab, staff can log in to view their Laboratory Inventory, add new stock
 
 I organized my code according to the Model View Controller software architecture. Be sure to check out my presentation on MVC [here](https://github.com/nicoledicochea/mvc-presentation)! This helped to maintain distinction between the functionality of each added feature. 
 
-I also added on a Routes folder. The routes takes requests from the User and send it to the correct Controller. This helped to declutter the Controller files.
+I also added on a Routes folder. The routes take requests from the client-side and send it to the correct Controller. This helped to declutter the Controller files.
 
 I created two schemas using mongoose: User and Item. The User model allows for user data to be saved to the database and contained the code for hashing the user's password. Don't worry, no risk of your password being released here with LumiLab! The hashing prevents your password from being saved in the database as plain text. 
 
