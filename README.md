@@ -5,7 +5,7 @@
 <img alt="Screenshot of LumiLab Homepage" width="650" src="https://user-images.githubusercontent.com/111663583/218003521-2df26205-f0c2-4a76-9a25-a3423bf1a5f1.png"></img>
 </p>
 
-**Link to project:** [LumiLab](https://lumilab.onrender.com/)
+**Link to project:** [LumiLab](https://lumilab.app/)
 
 For a quick demo with lab items already uploaded, use the following login information:
 - Email: guest@guest.com
@@ -17,7 +17,7 @@ I'm working on making a video for better demo quality!
 <p align="center"><img alt="Screenshot of LumiLab Homepage" width="550" src="https://user-images.githubusercontent.com/111663583/218010069-7eb61449-b943-4c96-a258-589ba5f93c21.gif"></img></p>
 
 
-## An In-Progress FullStack Web App
+## About
 What's a laboratory without inventory? A useless room full of expensive equipment.
 
 I currently work as a Scientist for a Start-up that created the first all-in-one glucose monitor. It’s a unique, innovative product, but the rest of our practices hardly matched up. 
@@ -30,7 +30,7 @@ I set out to solve this.
 
 With LumiLab, staff can log in to view their Laboratory Inventory, add new stock, include important notes for specific items, and set reminders to restock.
 
-## How It's Made:
+## How It's Made
 
 **Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript, EJS Tailwind
 
@@ -39,7 +39,7 @@ With LumiLab, staff can log in to view their Laboratory Inventory, add new stock
 - [Flowrift](https://flowrift.com/c/cta)
 - [Tailwind Awesome](https://www.tailwindawesome.com/?price=free&type=kit) - Multiple free kits
 
-### Illustrations:
+### Illustrations
 - [Work illustrations by Storyset](https://storyset.com/work)
 
 I organized my code according to the Model View Controller software architecture. Be sure to check out my presentation on MVC [here](https://github.com/nicoledicochea/mvc-presentation)! This helped to maintain distinction between the functionality of each added feature. 
@@ -68,7 +68,7 @@ I want to add in filtering for the inventory page. This will require adding on t
 
 Add in other methods for logging in, such as google oauth.
 
-## Lessons Learned:
+## Lessons Learned
 
 The *beauty* of Tailwind! So many free Open Source components made it much easier to design the front-end quickly and efficiently.
 
