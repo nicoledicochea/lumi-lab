@@ -32,7 +32,7 @@ With LumiLab, staff can log in to view their Laboratory Inventory, add new stock
 
 ## How It's Made
 
-**Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript, EJS Tailwind
+**Tech used:**  Node.JS, Express, MongoDB, HTML, CSS, JavaScript, EJS, Tailwind
 
 ### Open Source Tailwind Components:
 - [Hyper UI](https://www.hyperui.dev/)
